@@ -1,3 +1,9 @@
+/*begin-commonstyles library*//*!
+ * froala_editor v4.0.6 (https://www.froala.com/wysiwyg-editor)
+ * License https://froala.com/wysiwyg-editor/terms/
+ * Copyright 2014-2021 Froala Labs
+ */
+
 .fr-clearfix::after {
   clear: both;
   display: block;
@@ -37633,6 +37639,10 @@ a.u-link.u-text-hover-grey-90:hover {
         
         
         
+        
+        
+        
+        
         }
 
         /** common-rules **/
@@ -37749,6 +37759,13 @@ a.u-link.u-text-hover-grey-90:hover {
         {
         margin-top: 20px;
         margin-bottom: 20px;
+        }
+        .u-body
+        {
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
         }
         /** common-rules **/
 
@@ -37958,33 +37975,67 @@ a.u-link.u-text-hover-grey-90:hover {
 
 .u-footer .u-text-1 {
   width: 417px;
-  margin: 49px auto;
+  margin: 49px auto 0;
+}
+
+.u-footer .u-image-1 {
+  width: 88px;
+  height: 23px;
+  margin: -23px 510px 48px auto;
 }
 @media (max-width: 1199px) {
-  .u-footer .u-sheet-1 {
-    min-height: 99px;
+  .u-footer .u-image-1 {
+    margin-top: -23px;
   }
 }
 @media (max-width: 991px) {
-  .u-footer .u-sheet-1 {
-    min-height: 76px;
+  .u-footer .u-text-1 {
+    margin-right: 182px;
+    margin-left: 121px;
+  }
+
+  .u-footer .u-image-1 {
+    margin-left: 511px;
   }
 }
 @media (max-width: 767px) {
-  .u-footer .u-sheet-1 {
-    min-height: 57px;
+  .u-footer .u-text-1 {
+    margin-right: 92px;
+    margin-left: 31px;
+  }
+
+  .u-footer .u-image-1 {
+    margin-right: 452px;
+    margin-left: 421px;
   }
 }
 @media (max-width: 575px) {
   .u-footer .u-sheet-1 {
-    min-height: 36px;
+    min-height: 122px;
   }
 
   .u-footer .u-text-1 {
-    width: 340px;
+    width: auto;
+    margin-top: 52px;
+    margin-right: 0;
+    margin-left: 19px;
+  }
+
+  .u-footer .u-image-1 {
+    margin-top: -23px;
+    margin-right: 103px;
+    margin-left: auto;
   }
 }
 
+ /*begin-variables custom-site-css*/html,body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  background:rgba(241,241,241,1);   
+}/*end-variables custom-site-css*/
  /*begin-variables base-font-size*/ 
  html { font-size: 16px; }
  /*end-variables base-font-size*/
